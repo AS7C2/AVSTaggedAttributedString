@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		75323ABE1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75323AC51D58B11300798BF7 /* AVSTaggedAttributedString_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.framework */; };
+		75323AC51D58B11300798BF7 /* AVSTaggedAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */; };
 		75323ACA1D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AC91D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift */; };
 		75323ADA1D58B13500798BF7 /* AVSTaggedAttributedString_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 75323AD91D58B13500798BF7 /* AVSTaggedAttributedString_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75323AE11D58B13600798BF7 /* AVSTaggedAttributedString_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323AD71D58B13500798BF7 /* AVSTaggedAttributedString_macOS.framework */; };
+		75323AE11D58B13600798BF7 /* AVSTaggedAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */; };
 		75323AE61D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AE51D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift */; };
+		75323AF11D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */; };
+		75323AF21D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */; };
+		75323AF41D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
+		75323AF51D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString_iOS.h; sourceTree = "<group>"; };
 		75323ABF1D58B11300798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AC41D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323AC91D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString_iOSTests.swift; sourceTree = "<group>"; };
 		75323ACB1D58B11300798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75323AD71D58B13500798BF7 /* AVSTaggedAttributedString_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323AD91D58B13500798BF7 /* AVSTaggedAttributedString_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString_macOS.h; sourceTree = "<group>"; };
 		75323ADB1D58B13500798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AE01D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323AE51D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString_macOSTests.swift; sourceTree = "<group>"; };
 		75323AE71D58B13600798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedStringTests.swift; sourceTree = "<group>"; };
+		75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75323AC51D58B11300798BF7 /* AVSTaggedAttributedString_iOS.framework in Frameworks */,
+				75323AC51D58B11300798BF7 /* AVSTaggedAttributedString.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75323AE11D58B13600798BF7 /* AVSTaggedAttributedString_macOS.framework in Frameworks */,
+				75323AE11D58B13600798BF7 /* AVSTaggedAttributedString.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +103,9 @@
 		75323ABB1D58B11300798BF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.framework */,
+				75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */,
 				75323AC41D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.xctest */,
-				75323AD71D58B13500798BF7 /* AVSTaggedAttributedString_macOS.framework */,
+				75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */,
 				75323AE01D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.xctest */,
 			);
 			name = Products;
@@ -144,6 +150,7 @@
 		75323AEE1D58B1A600798BF7 /* AVSTaggedAttributedString */ = {
 			isa = PBXGroup;
 			children = (
+				75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */,
 			);
 			path = AVSTaggedAttributedString;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 		75323AEF1D58B20100798BF7 /* AVSTaggedAttributedString_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */,
 			);
 			path = AVSTaggedAttributedString_Tests;
 			sourceTree = "<group>";
@@ -192,7 +200,7 @@
 			);
 			name = AVSTaggedAttributedString_iOS;
 			productName = AVSTaggedAttributedString_iOS;
-			productReference = 75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString_iOS.framework */;
+			productReference = 75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		75323AC31D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests */ = {
@@ -228,7 +236,7 @@
 			);
 			name = AVSTaggedAttributedString_macOS;
 			productName = AVSTaggedAttributedString_macOS;
-			productReference = 75323AD71D58B13500798BF7 /* AVSTaggedAttributedString_macOS.framework */;
+			productReference = 75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		75323ADF1D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests */ = {
@@ -336,6 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75323ACA1D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift in Sources */,
+				75323AF11D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */,
+				75323AF41D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75323AE61D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift in Sources */,
+				75323AF21D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */,
+				75323AF51D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +385,16 @@
 		75323AB31D58AC2900798BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherstniuk.AVSTaggedAttributedString;
+				PRODUCT_NAME = AVSTaggedAttributedString;
 			};
 			name = Debug;
 		};
 		75323AB41D58AC2900798BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherstniuk.AVSTaggedAttributedString;
+				PRODUCT_NAME = AVSTaggedAttributedString;
 			};
 			name = Release;
 		};
@@ -430,8 +446,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sherstniuk.AVSTaggedAttributedString-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = $inherited;
+				PRODUCT_NAME = $inherited;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -482,8 +498,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sherstniuk.AVSTaggedAttributedString-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = $inherited;
+				PRODUCT_NAME = $inherited;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,8 +650,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sherstniuk.AVSTaggedAttributedString-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = $inherited;
+				PRODUCT_NAME = $inherited;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -687,8 +703,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sherstniuk.AVSTaggedAttributedString-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = $inherited;
+				PRODUCT_NAME = $inherited;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -807,6 +823,7 @@
 				75323ACE1D58B11300798BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75323ACF1D58B11300798BF7 /* Build configuration list for PBXNativeTarget "AVSTaggedAttributedString_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +832,7 @@
 				75323AD11D58B11300798BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75323AE81D58B13600798BF7 /* Build configuration list for PBXNativeTarget "AVSTaggedAttributedString_macOS" */ = {
 			isa = XCConfigurationList;
@@ -823,6 +841,7 @@
 				75323AEA1D58B13600798BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75323AEB1D58B13600798BF7 /* Build configuration list for PBXNativeTarget "AVSTaggedAttributedString_macOSTests" */ = {
 			isa = XCConfigurationList;
@@ -831,6 +850,7 @@
 				75323AED1D58B13600798BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
