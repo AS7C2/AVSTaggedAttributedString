@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		75323ABE1D58B11300798BF7 /* AVSTaggedAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75323AC51D58B11300798BF7 /* AVSTaggedAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */; };
-		75323ACA1D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AC91D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift */; };
 		75323ADA1D58B13500798BF7 /* AVSTaggedAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 75323AD91D58B13500798BF7 /* AVSTaggedAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75323AE11D58B13600798BF7 /* AVSTaggedAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */; };
-		75323AE61D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AE51D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift */; };
-		75323AF11D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */; };
-		75323AF21D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */; };
 		75323AF41D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
 		75323AF51D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
+		75568D9C1D58C0640088AEB3 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */; };
+		75568D9D1D58C0650088AEB3 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,16 +39,14 @@
 		75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString.h; sourceTree = "<group>"; };
 		75323ABF1D58B11300798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AC41D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75323AC91D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString_iOSTests.swift; sourceTree = "<group>"; };
 		75323ACB1D58B11300798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323AD91D58B13500798BF7 /* AVSTaggedAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString.h; sourceTree = "<group>"; };
 		75323ADB1D58B13500798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AE01D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75323AE51D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString_macOSTests.swift; sourceTree = "<group>"; };
 		75323AE71D58B13600798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedStringTests.swift; sourceTree = "<group>"; };
 		75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString.swift; sourceTree = "<group>"; };
+		75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedStringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				75323AEE1D58B1A600798BF7 /* AVSTaggedAttributedString */,
-				75323ABC1D58B11300798BF7 /* AVSTaggedAttributedString_iOS */,
-				75323AC81D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests */,
-				75323AD81D58B13500798BF7 /* AVSTaggedAttributedString_macOS */,
-				75323AE41D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests */,
-				75323AEF1D58B20100798BF7 /* AVSTaggedAttributedString_Tests */,
+				75568D991D58C0580088AEB3 /* AVSTaggedAttributedStringTests */,
+				75568D981D58BFFC0088AEB3 /* Configuration */,
 				75323ABB1D58B11300798BF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,7 +116,6 @@
 		75323AC81D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				75323AC91D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift */,
 				75323ACB1D58B11300798BF7 /* Info.plist */,
 			);
 			path = AVSTaggedAttributedString_iOSTests;
@@ -141,7 +133,6 @@
 		75323AE41D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				75323AE51D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift */,
 				75323AE71D58B13600798BF7 /* Info.plist */,
 			);
 			path = AVSTaggedAttributedString_macOSTests;
@@ -155,12 +146,23 @@
 			path = AVSTaggedAttributedString;
 			sourceTree = "<group>";
 		};
-		75323AEF1D58B20100798BF7 /* AVSTaggedAttributedString_Tests */ = {
+		75568D981D58BFFC0088AEB3 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				75323AF01D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift */,
+				75323ABC1D58B11300798BF7 /* AVSTaggedAttributedString_iOS */,
+				75323AC81D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests */,
+				75323AD81D58B13500798BF7 /* AVSTaggedAttributedString_macOS */,
+				75323AE41D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests */,
 			);
-			path = AVSTaggedAttributedString_Tests;
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		75568D991D58C0580088AEB3 /* AVSTaggedAttributedStringTests */ = {
+			isa = PBXGroup;
+			children = (
+				75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */,
+			);
+			path = AVSTaggedAttributedStringTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,9 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75323ACA1D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.swift in Sources */,
-				75323AF11D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */,
 				75323AF41D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */,
+				75568D9C1D58C0640088AEB3 /* AVSTaggedAttributedStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +361,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75323AE61D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.swift in Sources */,
-				75323AF21D58B30C00798BF7 /* AVSTaggedAttributedStringTests.swift in Sources */,
 				75323AF51D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */,
+				75568D9D1D58C0650088AEB3 /* AVSTaggedAttributedStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

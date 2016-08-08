@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "75323AB91D58B11300798BF7"
-               BuildableName = "AVSTaggedAttributedString_iOS.framework"
+               BuildableName = "AVSTaggedAttributedString.framework"
                BlueprintName = "AVSTaggedAttributedString_iOS"
                ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75323AB91D58B11300798BF7"
-            BuildableName = "AVSTaggedAttributedString_iOS.framework"
+            BuildableName = "AVSTaggedAttributedString.framework"
             BlueprintName = "AVSTaggedAttributedString_iOS"
             ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75323AB91D58B11300798BF7"
-            BuildableName = "AVSTaggedAttributedString_iOS.framework"
+            BuildableName = "AVSTaggedAttributedString.framework"
             BlueprintName = "AVSTaggedAttributedString_iOS"
             ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75323AB91D58B11300798BF7"
-            BuildableName = "AVSTaggedAttributedString_iOS.framework"
+            BuildableName = "AVSTaggedAttributedString.framework"
             BlueprintName = "AVSTaggedAttributedString_iOS"
             ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
          </BuildableReference>

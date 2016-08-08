@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "75323AD61D58B13500798BF7"
-               BuildableName = "AVSTaggedAttributedString_macOS.framework"
+               BuildableName = "AVSTaggedAttributedString.framework"
                BlueprintName = "AVSTaggedAttributedString_macOS"
                ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75323AD61D58B13500798BF7"
-            BuildableName = "AVSTaggedAttributedString_macOS.framework"
+            BuildableName = "AVSTaggedAttributedString.framework"
             BlueprintName = "AVSTaggedAttributedString_macOS"
             ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75323AD61D58B13500798BF7"
-            BuildableName = "AVSTaggedAttributedString_macOS.framework"
+            BuildableName = "AVSTaggedAttributedString.framework"
             BlueprintName = "AVSTaggedAttributedString_macOS"
             ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75323AD61D58B13500798BF7"
-            BuildableName = "AVSTaggedAttributedString_macOS.framework"
+            BuildableName = "AVSTaggedAttributedString.framework"
             BlueprintName = "AVSTaggedAttributedString_macOS"
             ReferencedContainer = "container:AVSTaggedAttributedString.xcodeproj">
          </BuildableReference>
