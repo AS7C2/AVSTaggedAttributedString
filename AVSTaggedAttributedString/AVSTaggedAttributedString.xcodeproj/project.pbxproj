@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75323ABE1D58B11300798BF7 /* AVSTaggedAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75323AC51D58B11300798BF7 /* AVSTaggedAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */; };
-		75323ADA1D58B13500798BF7 /* AVSTaggedAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 75323AD91D58B13500798BF7 /* AVSTaggedAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75323AE11D58B13600798BF7 /* AVSTaggedAttributedString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */; };
 		75323AF41D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
 		75323AF51D58B73E00798BF7 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
 		75568D9C1D58C0640088AEB3 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */; };
 		75568D9D1D58C0650088AEB3 /* AVSTaggedAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */; };
+		75568E231D5A09E30088AEB3 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
+		75568E241D5A09E40088AEB3 /* AVSTaggedAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */; };
+		75568E251D5A0F010088AEB3 /* AVSTaggedAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 75568E1C1D5A09B90088AEB3 /* AVSTaggedAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75568E261D5A0F110088AEB3 /* AVSTaggedAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 75568E1C1D5A09B90088AEB3 /* AVSTaggedAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +38,14 @@
 
 /* Begin PBXFileReference section */
 		75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString.h; sourceTree = "<group>"; };
-		75323ABF1D58B11300798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AC41D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75323ACB1D58B11300798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75323AD91D58B13500798BF7 /* AVSTaggedAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString.h; sourceTree = "<group>"; };
-		75323ADB1D58B13500798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AE01D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75323AE71D58B13600798BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedString.swift; sourceTree = "<group>"; };
 		75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSTaggedAttributedStringTests.swift; sourceTree = "<group>"; };
+		75568E1C1D5A09B90088AEB3 /* AVSTaggedAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSTaggedAttributedString.h; sourceTree = "<group>"; };
+		75568E1D1D5A09B90088AEB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75568E201D5A09C10088AEB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +87,6 @@
 			children = (
 				75323AEE1D58B1A600798BF7 /* AVSTaggedAttributedString */,
 				75568D991D58C0580088AEB3 /* AVSTaggedAttributedStringTests */,
-				75568D981D58BFFC0088AEB3 /* Configuration */,
 				75323ABB1D58B11300798BF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,65 +102,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75323ABC1D58B11300798BF7 /* AVSTaggedAttributedString_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				75323ABD1D58B11300798BF7 /* AVSTaggedAttributedString.h */,
-				75323ABF1D58B11300798BF7 /* Info.plist */,
-			);
-			path = AVSTaggedAttributedString_iOS;
-			sourceTree = "<group>";
-		};
-		75323AC81D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				75323ACB1D58B11300798BF7 /* Info.plist */,
-			);
-			path = AVSTaggedAttributedString_iOSTests;
-			sourceTree = "<group>";
-		};
-		75323AD81D58B13500798BF7 /* AVSTaggedAttributedString_macOS */ = {
-			isa = PBXGroup;
-			children = (
-				75323AD91D58B13500798BF7 /* AVSTaggedAttributedString.h */,
-				75323ADB1D58B13500798BF7 /* Info.plist */,
-			);
-			path = AVSTaggedAttributedString_macOS;
-			sourceTree = "<group>";
-		};
-		75323AE41D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				75323AE71D58B13600798BF7 /* Info.plist */,
-			);
-			path = AVSTaggedAttributedString_macOSTests;
-			sourceTree = "<group>";
-		};
 		75323AEE1D58B1A600798BF7 /* AVSTaggedAttributedString */ = {
 			isa = PBXGroup;
 			children = (
 				75323AF31D58B73E00798BF7 /* AVSTaggedAttributedString.swift */,
+				75568E271D5A0FF90088AEB3 /* Supporting Files */,
 			);
 			path = AVSTaggedAttributedString;
-			sourceTree = "<group>";
-		};
-		75568D981D58BFFC0088AEB3 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				75323ABC1D58B11300798BF7 /* AVSTaggedAttributedString_iOS */,
-				75323AC81D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests */,
-				75323AD81D58B13500798BF7 /* AVSTaggedAttributedString_macOS */,
-				75323AE41D58B13600798BF7 /* AVSTaggedAttributedString_macOSTests */,
-			);
-			name = Configuration;
 			sourceTree = "<group>";
 		};
 		75568D991D58C0580088AEB3 /* AVSTaggedAttributedStringTests */ = {
 			isa = PBXGroup;
 			children = (
 				75568D9A1D58C0580088AEB3 /* AVSTaggedAttributedStringTests.swift */,
+				75568E281D5A10030088AEB3 /* Supporting Files */,
 			);
 			path = AVSTaggedAttributedStringTests;
+			sourceTree = "<group>";
+		};
+		75568E271D5A0FF90088AEB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75568E1C1D5A09B90088AEB3 /* AVSTaggedAttributedString.h */,
+				75568E1D1D5A09B90088AEB3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75568E281D5A10030088AEB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75568E201D5A09C10088AEB3 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +144,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75323ABE1D58B11300798BF7 /* AVSTaggedAttributedString.h in Headers */,
+				75568E251D5A0F010088AEB3 /* AVSTaggedAttributedString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +152,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75323ADA1D58B13500798BF7 /* AVSTaggedAttributedString.h in Headers */,
+				75568E261D5A0F110088AEB3 /* AVSTaggedAttributedString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75568E231D5A09E30088AEB3 /* AVSTaggedAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75568E241D5A09E40088AEB3 /* AVSTaggedAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,16 +359,22 @@
 		75323AB31D58AC2900798BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherstniuk.AVSTaggedAttributedString;
 				PRODUCT_NAME = AVSTaggedAttributedString;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		75323AB41D58AC2900798BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherstniuk.AVSTaggedAttributedString;
 				PRODUCT_NAME = AVSTaggedAttributedString;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -440,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_iOS/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedString/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -493,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_iOS/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedString/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -546,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_iOSTests/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedStringTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -589,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_iOSTests/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedStringTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -644,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_macOS/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedString/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -698,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_macOS/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedString/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -750,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_macOSTests/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedStringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -794,7 +774,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = AVSTaggedAttributedString_macOSTests/Info.plist;
+				INFOPLIST_FILE = AVSTaggedAttributedStringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;

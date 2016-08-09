@@ -6,7 +6,7 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for AVSTaggedAttributedString_iOS.
 FOUNDATION_EXPORT double AVSTaggedAttributedString_iOSVersionNumber;
