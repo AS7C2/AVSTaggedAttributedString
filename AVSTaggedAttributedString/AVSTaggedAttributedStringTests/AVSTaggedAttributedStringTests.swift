@@ -7,32 +7,52 @@
 //
 
 import XCTest
+
 import AVSTaggedAttributedString
 
 class AVSTaggedAttributedStringTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+#if os(OSX)
+    let redColor = NSColor.redColor()
+#else
+    let redColor = UIColor.redColor()
+#endif
+
+    func testEmpty() {
+        let s = ""
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSFontAttributeName: redColor], tag: "tag1", removeTag: false)
+        XCTAssertEqual(NSAttributedString(string: s), (mas.copy() as! NSAttributedString))
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testWithoutTags() {
+        let s = "string"
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSFontAttributeName: redColor], tag: "tag1", removeTag: true)
+        XCTAssertEqual(NSAttributedString(string: s), (mas.copy() as! NSAttributedString))
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(f1(), 100)
+    func testEmptyWithTagNoRemove() {
+        let s = "<tag1></tag1>"
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSFontAttributeName: redColor], tag: "tag1", removeTag: false)
+        XCTAssertEqual(NSAttributedString(string: s), (mas.copy() as! NSAttributedString))
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testEmptyWithTagRemove() {
+        let s = "<tag1></tag1>"
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSFontAttributeName: redColor], tag: "tag1", removeTag: true)
+        XCTAssertEqual(NSAttributedString(string: "", attributes: [NSFontAttributeName: redColor]), (mas.copy() as! NSAttributedString))
     }
 
+    func testNoEmptyWithTagNoRemove() {
+        let s = "<tag1>string</tag1>"
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSFontAttributeName: redColor], tag: "tag1", removeTag: false)
+        let expected = NSMutableAttributedString(string: s)
+        expected.addAttributes([NSFontAttributeName: redColor], range: NSRange(location: 6, length: 6))
+        XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
+    }
 }
 
