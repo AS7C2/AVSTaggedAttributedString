@@ -9,14 +9,20 @@
 import Foundation
 
 extension NSRange {
-    var isFound: Bool {
+    var avs_isFound: Bool {
         get {
             return self.location != NSNotFound
         }
     }
 
-    func isBefore(range range: NSRange) -> Bool {
+    func avs_isBefore(range range: NSRange) -> Bool {
         return self.location + self.length <= range.location
+    }
+
+    static func avs_between(range1 range1: NSRange, range2: NSRange) -> NSRange {
+        let location = range1.location + range1.length
+        let length = range2.location - location
+        return NSRange(location: location, length: length)
     }
 }
 
@@ -28,16 +34,14 @@ extension NSMutableAttributedString {
         var string = self.mutableString
         var openRange = string.rangeOfString(openTag)
         var closeRange = string.rangeOfString(closeTag)
-        while openRange.isFound && closeRange.isFound && openRange.isBefore(range: closeRange) {
-            var innerLocation = openRange.location + openRange.length
-            let innerLength = closeRange.location - openRange.location - openRange.length
-            innerLocation -= openRange.length;
+        while openRange.avs_isFound && closeRange.avs_isFound && openRange.avs_isBefore(range: closeRange) {
+            let rangeBetween = NSRange.avs_between(range1: openRange, range2: closeRange)
 
             self.replaceCharactersInRange(closeRange, withString: "")
             self.replaceCharactersInRange(openRange, withString: "")
 
-            let innerRange = NSRange(location: innerLocation, length: innerLength)
-            self.addAttributes(attributes, range: innerRange)
+            let rangeBetweenWithRemovedTags = NSRange(location: openRange.location, length: rangeBetween.length)
+            self.addAttributes(attributes, range: rangeBetweenWithRemovedTags)
 
             string = self.mutableString
             openRange = string.rangeOfString(openTag)
