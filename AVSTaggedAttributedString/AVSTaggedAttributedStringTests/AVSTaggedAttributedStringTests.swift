@@ -80,5 +80,13 @@ class AVSTaggedAttributedStringTests: XCTestCase {
         expected.addAttributes([NSUnderlineStyleAttributeName: NSUnderlineStyle.PatternSolid.rawValue], range: NSRange(location:7, length: 7))
         XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
     }
+
+    func testAttributedStringExtension() {
+        let s = "some<tag1>string</tag1>"
+        let actual = NSAttributedString(string: s).avs_attributedStringByAddingAttributes([NSForegroundColorAttributeName: redColor], tag: "tag1")
+        let expected = NSMutableAttributedString(string: "somestring")
+        expected.addAttributes([NSForegroundColorAttributeName: redColor], range: NSRange(location:4, length: 6))
+        XCTAssertEqual((expected.copy() as! NSAttributedString), actual)
+    }
 }
 
