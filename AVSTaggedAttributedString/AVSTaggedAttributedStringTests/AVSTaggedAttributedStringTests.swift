@@ -34,14 +34,14 @@ class AVSTaggedAttributedStringTests: XCTestCase {
         XCTAssertEqual(NSAttributedString(string: s), (mas.copy() as! NSAttributedString))
     }
 
-    func testEmptyWithTagRemove() {
+    func testEmptyWithTag() {
         let s = "<tag1></tag1>"
         let mas = NSMutableAttributedString(string: s)
         mas.avs_addAttributes([NSForegroundColorAttributeName: redColor], tag: "tag1")
         XCTAssertEqual(NSAttributedString(string: "", attributes: [NSForegroundColorAttributeName: redColor]), (mas.copy() as! NSAttributedString))
     }
 
-    func testNoEmptyWithSwitchedOpenAndCloseTagRemove() {
+    func testNoEmptyWithSwitchedOpenAndCloseTag() {
         let s = "</tag1>string<tag1>"
         let mas = NSMutableAttributedString(string: s)
         mas.avs_addAttributes([NSForegroundColorAttributeName: redColor], tag: "tag1")
@@ -49,7 +49,7 @@ class AVSTaggedAttributedStringTests: XCTestCase {
         XCTAssertEqual(expected, (mas.copy() as! NSAttributedString))
     }
 
-    func testNoEmptyWithTwoTagsRemove() {
+    func testNoEmptyWithTwoTags() {
         let s = "<tag1>string</tag1><tag2>text</tag2>"
         let mas = NSMutableAttributedString(string: s)
         mas.avs_addAttributes([NSForegroundColorAttributeName: redColor], tag: "tag1")
@@ -60,13 +60,24 @@ class AVSTaggedAttributedStringTests: XCTestCase {
         XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
     }
 
-    func testWithTwoConsequentSameTagsRemove() {
+    func testWithTwoConsequentSameTags() {
         let s = "<tag1>string</tag1> <tag1>text</tag1>"
         let mas = NSMutableAttributedString(string: s)
         mas.avs_addAttributes([NSForegroundColorAttributeName: redColor], tag: "tag1")
         let expected = NSMutableAttributedString(string: "string text")
         expected.addAttributes([NSForegroundColorAttributeName: redColor], range: NSRange(location:0, length: 6))
         expected.addAttributes([NSForegroundColorAttributeName: redColor], range: NSRange(location:7, length: 4))
+        XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
+    }
+
+    func testTwoIntersectingTags() {
+        let s = "some<tag1>str<tag2>ing</tag1>text</tag2>end"
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSForegroundColorAttributeName: redColor], tag: "tag1")
+        mas.avs_addAttributes([NSUnderlineStyleAttributeName: NSUnderlineStyle.PatternSolid.rawValue], tag: "tag2")
+        let expected = NSMutableAttributedString(string: "somestringtextend")
+        expected.addAttributes([NSForegroundColorAttributeName: redColor], range: NSRange(location:4, length: 6))
+        expected.addAttributes([NSUnderlineStyleAttributeName: NSUnderlineStyle.PatternSolid.rawValue], range: NSRange(location:7, length: 7))
         XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
     }
 }

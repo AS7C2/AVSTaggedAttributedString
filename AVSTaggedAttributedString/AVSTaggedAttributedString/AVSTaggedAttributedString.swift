@@ -8,26 +8,26 @@
 
 import Foundation
 
-extension NSRange {
-    var avs_isFound: Bool {
+private extension NSRange {
+    private var avs_isFound: Bool {
         get {
             return self.location != NSNotFound
         }
     }
 
-    func avs_isBefore(range range: NSRange) -> Bool {
+    private func avs_isBefore(range range: NSRange) -> Bool {
         return self.location + self.length <= range.location
     }
 
-    static func avs_between(range1 range1: NSRange, range2: NSRange) -> NSRange {
+    private static func avs_between(range1 range1: NSRange, range2: NSRange) -> NSRange {
         let location = range1.location + range1.length
         let length = range2.location - location
         return NSRange(location: location, length: length)
     }
 }
 
-extension NSMutableAttributedString {
-    func avs_addAttributes(attributes: [String: AnyObject], tag: String) {
+public extension NSMutableAttributedString {
+    public func avs_addAttributes(attributes: [String: AnyObject], tag: String) {
         let openTag = "<\(tag)>"
         let closeTag = "</\(tag)>"
 
