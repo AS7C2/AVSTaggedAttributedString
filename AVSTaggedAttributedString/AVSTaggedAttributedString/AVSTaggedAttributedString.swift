@@ -27,7 +27,7 @@ private extension NSRange {
 }
 
 public extension NSMutableAttributedString {
-    public func avs_addAttributes(attributes: [String: AnyObject], tag: String) {
+    public func avs_addAttributes(attributes: [String: AnyObject], toTag tag: String) {
         let openTag = "<\(tag)>"
         let closeTag = "</\(tag)>"
 
@@ -51,9 +51,9 @@ public extension NSMutableAttributedString {
 }
 
 public extension NSAttributedString {
-    public func avs_attributedStringByAddingAttributes(attributes: [String: AnyObject], tag: String) -> NSAttributedString {
+    public func avs_attributedStringByAddingAttributes(attributes: [String: AnyObject], toTag tag: String) -> NSAttributedString {
         let mutableSelf = self.mutableCopy() as! NSMutableAttributedString
-        mutableSelf.avs_addAttributes(attributes, tag: tag)
+        mutableSelf.avs_addAttributes(attributes, toTag: tag)
         return mutableSelf.copy() as! NSAttributedString
     }
 }
