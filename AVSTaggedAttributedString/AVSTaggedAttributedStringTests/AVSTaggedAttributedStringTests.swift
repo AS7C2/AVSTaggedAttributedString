@@ -81,6 +81,17 @@ class AVSTaggedAttributedStringTests: XCTestCase {
         XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
     }
 
+    func testTwoIntersectingTags_reversedAttributesApplicationOrder() {
+        let s = "some<tag1>str<tag2>ing</tag1>text</tag2>end"
+        let mas = NSMutableAttributedString(string: s)
+        mas.avs_addAttributes([NSUnderlineStyleAttributeName: NSUnderlineStyle.PatternSolid.rawValue], toTag: "tag2")
+        mas.avs_addAttributes([NSForegroundColorAttributeName: redColor], toTag: "tag1")
+        let expected = NSMutableAttributedString(string: "somestringtextend")
+        expected.addAttributes([NSForegroundColorAttributeName: redColor], range: NSRange(location:4, length: 6))
+        expected.addAttributes([NSUnderlineStyleAttributeName: NSUnderlineStyle.PatternSolid.rawValue], range: NSRange(location:7, length: 7))
+        XCTAssertEqual((expected.copy() as! NSAttributedString), (mas.copy() as! NSAttributedString))
+    }
+
     func testAttributedStringExtension() {
         let s = "some<tag1>string</tag1>"
         let actual = NSAttributedString(string: s).avs_attributedStringByAddingAttributes([NSForegroundColorAttributeName: redColor], toTag: "tag1")
