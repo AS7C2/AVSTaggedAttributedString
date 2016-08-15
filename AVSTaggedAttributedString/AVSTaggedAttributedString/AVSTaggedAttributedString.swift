@@ -57,3 +57,15 @@ public extension NSAttributedString {
         return mutableSelf.copy() as! NSAttributedString
     }
 }
+
+public extension String {
+    public func avs_attributedStringByAddingAttributes(attributes: [String: AnyObject], toTag tag: String) -> NSAttributedString {
+        return NSAttributedString(string: self).avs_attributedStringByAddingAttributes(attributes, toTag: tag)
+    }
+}
+
+public extension NSString {
+    public func avs_attributedStringByAddingAttributes(attributes: [String: AnyObject], toTag tag: String) -> NSAttributedString {
+        return (self as String).avs_attributedStringByAddingAttributes(attributes, toTag: tag)
+    }
+}

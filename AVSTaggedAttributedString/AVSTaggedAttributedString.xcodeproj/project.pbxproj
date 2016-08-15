@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751B74181D61DFAF00AFA2E8 /* AVSTaggedAttributedString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AVSTaggedAttributedString.playground; sourceTree = "<group>"; };
 		75323ABA1D58B11300798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323AC41D58B11300798BF7 /* AVSTaggedAttributedString_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVSTaggedAttributedString_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75323AD71D58B13500798BF7 /* AVSTaggedAttributedString.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVSTaggedAttributedString.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +86,7 @@
 		75323AAE1D58AC2900798BF7 = {
 			isa = PBXGroup;
 			children = (
+				751B74181D61DFAF00AFA2E8 /* AVSTaggedAttributedString.playground */,
 				75323AEE1D58B1A600798BF7 /* AVSTaggedAttributedString */,
 				75568D991D58C0580088AEB3 /* AVSTaggedAttributedStringTests */,
 				75323ABB1D58B11300798BF7 /* Products */,
