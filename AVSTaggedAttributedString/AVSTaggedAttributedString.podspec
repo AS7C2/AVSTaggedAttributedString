@@ -1,6 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name = "AVSTaggedAttributedString"
   spec.version = "0.0.3"
+  spec.ios.deployment_target = '8.0'
   spec.summary = "Tag-based formatting for NSAttributedString."
   spec.homepage = "https://github.com/AS7C2/AVSTaggedAttributedString"
   spec.license = { type: 'MIT', file: 'LICENSE' }
